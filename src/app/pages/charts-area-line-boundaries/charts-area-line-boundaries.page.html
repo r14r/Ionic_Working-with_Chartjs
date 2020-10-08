@@ -1,0 +1,33 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-menu-button></ion-menu-button>
+		</ion-buttons>
+		<ion-title>
+			Charts Area Line Boundaries
+		</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<div class="content">
+		<div class="wrapper col-2"><canvas #chartCanvas></canvas></div>
+	</div>
+
+	<ion-card>
+		<ion-card-content>
+			<canvas #chart0></canvas>
+			<canvas #chart1></canvas>
+			<canvas #chart2></canvas>
+			<canvas #chart3></canvas>
+		</ion-card-content>
+	</ion-card>
+
+	<ion-card>
+		<ion-card-content>
+			<ion-button expand="fill" (click)="randomizeData()">Randomize Data</ion-button>
+			<ion-button expand="fill" (click)="toggleSmooth()">Smooth</ion-button>
+		</ion-card-content>
+	</ion-card>
+
+</ion-content>
